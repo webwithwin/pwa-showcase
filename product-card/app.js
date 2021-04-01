@@ -26,6 +26,8 @@ const showImages = () => {
   container.innerHTML = output
 }
 
+document.addEventListener('DOMContentLoaded', showImages)
+
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('/pwa-showcase/product-card/sw.js')
