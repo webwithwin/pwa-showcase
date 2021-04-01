@@ -1,7 +1,7 @@
 {
   "name": "Store App",
   "short_name": "StoreApp",
-  "description"" "Web app for displaying product card"
+  "description"" "Web app for displaying product card",
   "start_url": "/pwa-showcase/product-card/index.html",
   "display": "fullscreen",
   "background_color": "#fdfdfd",
