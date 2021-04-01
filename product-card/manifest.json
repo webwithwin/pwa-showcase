@@ -1,0 +1,16 @@
+{
+  "name": "Store App",
+  "short_name": "StoreApp",
+  "description"" "Web app for displaying product card"
+  "start_url": "/pwa-showcase/product-card/index.html",
+  "display": "fullscreen",
+  "background_color": "#fdfdfd",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
