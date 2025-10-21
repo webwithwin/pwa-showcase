@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "express": "^5.1.0"
+  },
+  "scripts": {
+    "start": "kill -9 $(lsof -ti:8080) && node server.js"
+  }
+}
