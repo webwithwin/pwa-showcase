@@ -17,20 +17,28 @@ const showImages = () => {
   let output = ''
   images.forEach(
     // destructuring images object
-    ({ name, image }) =>
+    ({ name, image }, i) => 
       (output += `
           <div class="card">
-            <img class="card--avatar" src=${image} />
-        `)
+            <img src=${image} />
+          </div>
+        `   
+      )
   )
-  container.innerHTML = output
+  return output;
 }
 
-document.addEventListener('DOMContentLoaded', showImages)
+// document.addEventListener('DOMContentLoaded', showImages)
 
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/pwa-showcase/product-card/sw.js')
-    .then(res => console.log('Service worker registered'))
-    .catch(err => console.log('Service worker not registered', err))
+document.addEventListener('DOMContentLoaded', init, false)
+
+function init() {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then(res => console.log('Service worker registered', res))
+      .catch(err => console.log('Service worker not registered', err))
+  }
 }
+
+container.innerHTML = showImages();
