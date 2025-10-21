@@ -2,4 +2,4 @@
 
 Examples for progressive web apps.
 
-[See it live here](https://winardidesign.github.io/pwa-showcase/product-card/)
+[See it live here](https://webwithwin.github.io/pwa-showcase/product-card/)
